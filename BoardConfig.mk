@@ -46,6 +46,7 @@ BOARD_AVB_ENABLE := true
 # Crypto
 TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 TARGET_HW_DISK_ENCRYPTION := true
+PLATFORM_SECURITY_PATCH := 2099-12-31
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
