@@ -10,7 +10,9 @@
 /custom         ext4    /dev/block/bootdevice/by-name/custom        flags=display="Custom"
 
 # NV
-/persist        emmc    /dev/block/bootdevice/by-name/persist       flags=backup=1;display="Persist"
+/persist        emmc    /dev/block/bootdevice/by-name/persist       flags=backup=1;display="NV"
+/frp            emmc    /dev/block/bootdevice/by-name/frp           flags=backup=1;subpartitionof=/persist
+/private        emmc    /dev/block/bootdevice/by-name/private       flags=backup=1;subpartitionof=/persist
 
 # Removable storage
 /usb-otg        vfat    /dev/block/sda1         /dev/block/sda      flags=storage;wipeingui;removable
