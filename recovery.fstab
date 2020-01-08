@@ -9,6 +9,10 @@
 /misc           emmc    /dev/block/bootdevice/by-name/misc
 /custom         ext4    /dev/block/bootdevice/by-name/custom        flags=display="Custom"
 
+# Data
+/data           ext4    /dev/block/bootdevice/by-name/userdata
+/metadata       ext4    /dev/block/bootdevice/by-name/metadata      flags=display="Metadata";wipeingui=1
+
 # NV
 /persist        emmc    /dev/block/bootdevice/by-name/persist       flags=backup=1;display="NV"
 /frp            emmc    /dev/block/bootdevice/by-name/frp           flags=backup=1;subpartitionof=/persist
